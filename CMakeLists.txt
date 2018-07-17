@@ -22,4 +22,4 @@ add_executable(virtualmachine
         src/device/device.h
         src/device/disk.cpp
         src/device/disk.h
-        src/main.cpp)
+        src/main.cpp src/core/instruction.h src/core/program.cpp src/core/program.h)

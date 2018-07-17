@@ -9,10 +9,19 @@ using namespace std;
 
 
 VirtualMachine::VirtualMachine() {
-    memory.maloc(1024);
+    memory.allocateMemory(1024);
     Logger::getInstance()->log("Computer started");
 }
 
 VirtualMachine::~VirtualMachine() {
 
+}
+
+bool VirtualMachine::loadProgram(vector<int> &program) {
+
+    if (program.size() < memory.getMemSize()) {
+        for (int i = 0; i < program.size(); i++) {
+            memory.setAddress(i, program[i]);
+        }
+    }
 }

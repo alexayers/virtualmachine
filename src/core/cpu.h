@@ -41,6 +41,7 @@ public:
 
     ~CPU();
 private:
+
     int flags[5];
 
     int reg_int[11];

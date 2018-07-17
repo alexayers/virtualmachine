@@ -7,8 +7,6 @@
 
 #include <vector>
 
-using namespace std;
-
 class Memory {
 
 public:
@@ -16,7 +14,7 @@ public:
 
     ~Memory();
 
-    void maloc(int totalSize);
+    void allocateMemory(int totalSize);
 
     int getMemSize();
 
@@ -25,7 +23,7 @@ public:
     void setAddress(int address, int value);
 
 private:
-    vector<int> addresses;
+    std::vector<int> addresses;
 };
 
 

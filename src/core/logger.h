@@ -7,13 +7,11 @@
 
 #include <string>
 
-using namespace std;
-
 class Logger {
 public:
     static Logger* getInstance();
 
-    void log(string msg);
+    void log(std::string msg);
 
 private:
     Logger() {};

@@ -17,6 +17,6 @@ Logger* Logger::getInstance() {
 
 }
 
-void Logger::log(string msg) {
-    cout << msg << "\n";
+void Logger::log(std::string msg) {
+    std::cout << msg << "\n";
 }

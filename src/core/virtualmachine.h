@@ -20,6 +20,7 @@ public:
 
     ~VirtualMachine();
 
+    bool loadProgram(std::vector<int> &program);
 
 private:
 
